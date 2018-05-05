@@ -21,7 +21,7 @@ body {
     color: white;
   }
 
-  text-shadow: 0 2px 2px rgba(0,0,0,.25) !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.85) !important;
 }
 
 .donation-progress-wrapper {
@@ -94,7 +94,7 @@ body {
   }
 
   .progress-bar-background {
-
+    position: relative;
   }
 }
 
@@ -114,7 +114,6 @@ body {
   padding: 0 15px 20px;
 
   position: relative;
-    //top: -4px;
 
   .logo,
   .logo img {
@@ -185,7 +184,7 @@ body {
 
       .donation-amount {
         &:before {
-          content: "$";
+          //content: "$";
           margin-right: -2px;
         }
       }
@@ -276,6 +275,8 @@ body {
       float: none;
       top: -8px;
       margin: 0;
+      padding: 0 5px;
+      font-size: 18px;
 
       .total-donations-title,
       .goal-title {
