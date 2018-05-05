@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %link{:href => "https://tiltify.com/assets/events/overlays-1ab251b6dd694b1d3faea61a619131727875b6c2d441c1269460e48597221d79.css", :media => "screen", :rel => "stylesheet"}/
+    %link{:href => "/stylesheets/stack_up.css", :rel => "stylesheet"}/
+  %body
+    .dashboard-wrapper
+      .donation-progress-wrapper
+        .total-donations
+          %span.label.total-donations-title Raised
+          $
+          %span#total-donation-amount.total-donation-amount 500.00
+        .progress-bar-wrapper
+          .progress-bar-background
+            #progress-bar.progress-bar{:style => "width: 50%;"}
+        .goal
+          %span.label.goal-title Goal
+          %span#donation-goal-amount.donation-goal-amount $500.00
+      .donation-title-wrapper
+        %span.title-card.campaign-name Benny's 2017 Veteran's Day Call to Arms
+        %span.title-card.logo
+          %img{:alt => "Stackup edited", :src => "https://tiltify-production-assets.s3-us-west-2.amazonaws.com/uploads/cause/avatar/73/stackup_edited.jpg"}/
+        %span.title-card.charity-name
+          .cause-title.label Benefitting
+          Stack-Up.org
+      .donation-ticker-wrapper
+        #last-donation.donation-card.latest-donation
+          %span.label.last-donator-title Last Donation
+          %span#last-donator-name.donation-name
+            LastDonatorPerson
+          $
+          %span#last-donator-amount.donation-amount
+            200.00
+        #top-donation.donation-card.top-donation
+          %span.label.top-donation-title Top Donation
+          %span#top-donation-name.donation-name
+            TopDonatorPerson
+          %span#top-donation-amount.donation-amount
+            $100.00
+        #new-donation.donation-card.new-donation
+          %span.label.new-donation-label New Donation!
+          #new-donation-name.donation-name
+          $
+          #new-donation-amount.donation-amount
